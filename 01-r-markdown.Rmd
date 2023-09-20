@@ -1,0 +1,12 @@
+---
+title: "R-Markdown"
+author: "Minh Nguyen"
+date: "2023-09-20"
+output: html_document
+---
+
+```{r}
+library(tidyverse)
+mtcars
+write_csv(mtcars, "data/mtcars.csv")
+```
