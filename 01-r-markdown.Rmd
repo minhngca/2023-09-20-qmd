@@ -3,10 +3,29 @@ title: "R-Markdown"
 author: "Minh Nguyen"
 date: "2023-09-20"
 output: html_document
+editor_options: 
+  chunk_output_type: console
 ---
+```{r}
+# install.packages("here")
+```
+
 
 ```{r}
 library(tidyverse)
-mtcars
-write_csv(mtcars, "data/mtcars.csv")
 ```
+
+```{r}
+library(here)
+```
+
+```{r}
+mtcars
+# write_csv(mtcars, "data/mtcars.csv")
+# getwd()
+write_csv(mtcars, here("data/mtcars.csv"))
+
+```
+
+
+
